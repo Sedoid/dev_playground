@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border: 1px solid gray;
+
+}
+
+.header{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar{
+    border: 1px solid cyan;
+    background-color: #010128;
+    width:20% ;
+    height:auto;
+       
+}
+
+.sidebar > ul > li {
+    
+   text-decoration: none;
+   list-style-type: none;
+   padding: 10px;
+   border: 1px solid #ffffff;
+   
+
+   
+        
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    
+   
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+}
+
+#page{
+    display: flex;
+    
+}
+
+.footer{
+    display: flex;
+    border: 1px solid ;
+    justify-content: center;
+}
