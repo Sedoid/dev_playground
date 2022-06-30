@@ -1,31 +1,79 @@
+*,*::after, *::before{
+    box-sizing: border-box;
+}
 body{
-    background-image: url("image/img.jpg");
+    background-image: url("image/mybg.jpg");
+    background-repeat: no-repeat;
+    background-position: right top; 
 }
 .contain{
     width:90%;
     color: rgb(0, 0, 0);
-    
-
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    opacity:1;
+    padding: 10px 5px;    
 }
 header{
-    width: 90%;
-    margin: 2px auto;
-    padding: 0 5px;
+ 
+    height: 50px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
 }
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+ul>li{
+    margin-left: 5px;
+    font-size: 1.5rem;
+}
+li>a{
+    text-decoration: none;
+    margin :0 10px;
+}
+
+img{
+    height: 40px;
+    width: 80px;
+   
+}
+ol>li{
+    font-size: larger;
+    margin: 3px;
+}
+
 main{
     width:90%;
-    margin: 2px auto;
+    margin: 8px auto;
+    text-decoration: none;
+    padding-bottom: 0;
+}
+main section:first-child{
+    padding-bottom:px;
 }
 h1{
-    font-size: 10vw;
-    margin-bottom: -10px;
+    color: #005555;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: -20px;
     margin-top: -10px;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 h2{
     font-size: 30px;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-bottom: -10px;
+    margin-top: -15px;
     font-family: tahoma;
 }
 p{
@@ -35,15 +83,23 @@ hr{
     height: 2px;
     background-color: rgb(165, 120, 120);
     border-color: rgb(165, 120, 120);
+    margin-top: -10px;
 }
 .countDown{
     width: 80%;
     margin: 5px auto;
     background-color: rgb(138, 138, 175);
     text-align: center;
-    color: rgb(225, 240, 253);
-    padding-bottom: 2px;
+    color: #1a1315;
+    padding: 5px;
+    border-radius: 30px;
+    line-height: 5px;
 }
-h3{
-    margin-top: 4px;
+
+footer{
+    text-align: center;
+    line-height: 1px;
+}
+#bottom{
+    margin-top: 11px;
 }

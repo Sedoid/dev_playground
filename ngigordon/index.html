@@ -8,13 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="font-family: sans-serif;">
-    <div class="contain">
-        <header>
-            <h1 style="font-family: Impact;">Git commands</h1>
+    <header>
+        <img src="image/logo.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="git">Commands</a></li>
+                <li><a href="#counter">Counter</a></li>
+                <li><a href="#footer">About us</a></li>
+                <li><a href="#footer">Suggestion</a></li>
+           </ul>
+        </nav>
+    </header>
+    <main></main>
+      <div class="contain">
+        <div>
+            <h1>Basic Git Commands</h1>
             <p>Knowledge in Git and Github is a must know tool for every developer.</p>
-        </header>
-        <main>
-            <section><h2>The commands i have learned are :</h2>
+        </div>
+            <section id="git"><h2>The commands i have learned are :</h2>
                 <ol>
                     <li>Fork the repository meaning creating your own copy of project</li>
                     <li>Get the http code for the cloning process</li>
@@ -35,11 +46,16 @@
                 </ol> 
             </section>
             <hr>
-            <section class ="countDown">
-                <h2>countDown</h2>
+            <section id="counter" class ="countDown">
+                <h3>countDown</h3>
                 <h3 id="target">5</h3>
             </section>
+            <hr id="bottom">
         </main>
+        <footer id="footer">
+            <p>&COPY; <b>Gordons blog</b></p>
+            <p> <b>Ngi Gordon</b> Inc</p>
+        </footer>
     </div>
     
    
