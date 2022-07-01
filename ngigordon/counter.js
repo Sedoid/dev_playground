@@ -17,3 +17,14 @@ resetbtn.addEventListener("click",()=>{
     start_point=5
     var newRefresh = setInterval(()=>frame(newRefresh), 1000); 
 })
+
+// for hiding navbar
+var icon=document.getElementById("icon")
+var y=document.getElementById("mytopnav")
+icon.addEventListener('click', ()=>{
+if(y.className==="topnav"){
+  y.className = "responsive"
+}else{
+  y.className = "topnav"
+}
+})
