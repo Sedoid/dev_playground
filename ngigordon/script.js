@@ -1,16 +1,19 @@
+var resetbtn=document.getElementById("resetbtn");
 console.log('hello-world');
 var start_point = 5;
 var item_container = document.getElementById("target");
-
-
-// var countDownDate = new Date("Jul 25, 2021 16:37:52").getTime();
-// var myFunction = setInterval(() => {
-//     var now = new Date().getTime();
-//     var distance = countDownDate-now;
-//     var minutes = Math.floor((distance % (1000 * 60)) / 1000)
-//     item_container.innerHTML =minutes;
-//     if (distance < 0) {
-//         clearInterval(myFunction);
-//         document.getElementById("demo").innerHTML = "EXPIRED";
-//       }
-// }, 1000);
+var myinterval = setInterval(()=>frame(myinterval), 1000);
+function frame(target){
+    if(start_point === 0){
+      clearInterval(target)
+    }
+    item_container.innerHTML= start_point
+    start_point--
+    console.log("i love my world")
+    
+}
+resetbtn.addEventListener("click",()=>{
+    console.log("my world");
+    start_point=5
+    var newRefresh = setInterval(()=>frame(newRefresh), 1000); 
+})
