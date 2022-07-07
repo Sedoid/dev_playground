@@ -1,3 +1,33 @@
-var quote = new Array("quote 1","quote 2","quote 3","quote 4","quote 5");
+var startingPoint = 60
 
-console.log(quote[i]);
+function Countdown(start_value){
+// document.getElementById("starts").innerHTML=startingPoint ;
+var target = document.getElementById("starts");
+console.log(target)
+target.textContent = start_value
+}
+
+// create an interval that Coundown every one second (1000)
+
+var the_id = setInterval(function(){
+
+    startingPoint = startingPoint - 1
+
+    if(startingPoint ==0){
+        Countdown(startingPoint)
+        clearInterval(the_id)
+    }else{
+           Countdown(startingPoint)
+    }
+ 
+},1000)
+Countdown();
+
+
+
+
+
+
+
+
+
